@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.11.5 on win32)" generated="2024-10-25T17:08:18.756956" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\botty\robot\test.robot">
+<test id="s1-t1" name="Open Google Page" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-25T17:08:19.043265" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
+<arg>${GOOGLE_URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-25T17:08:19.042266" elapsed="2.211574"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-25T17:08:21.253840" elapsed="0.028983"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-25T17:08:24.284088" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-25T17:08:21.282823" elapsed="3.001265"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-25T17:08:24.285077" elapsed="2.175874"/>
+</kw>
+<doc>打開Google首頁</doc>
+<status status="PASS" start="2024-10-25T17:08:19.041267" elapsed="7.419684"/>
+</test>
+<test id="s1-t2" name="Navigate To Wikipedia form Google" line="17">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-25T17:08:26.462937" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
+<arg>${GOOGLE_URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-25T17:08:26.462937" elapsed="2.176746"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-25T17:08:28.640684" elapsed="0.032980"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-25T17:08:31.674710" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-25T17:08:28.674664" elapsed="3.000046"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-10-25T17:08:31.676697" level="INFO">Opening url 'https://www.wikipedia.org'</msg>
+<arg>${WIKI_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-10-25T17:08:31.675701" elapsed="0.585247"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-25T17:08:37.261912" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-25T17:08:32.260948" elapsed="5.000964"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-25T17:08:37.262919" elapsed="2.192816"/>
+</kw>
+<doc>從Google換到Wikipedia</doc>
+<status status="PASS" start="2024-10-25T17:08:26.462937" elapsed="12.993764"/>
+</test>
+<test id="s1-t3" name="Search 80211be On Google" line="26">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-25T17:08:39.463732" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
+<arg>${GOOGLE_URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-25T17:08:39.462732" elapsed="2.177445"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-25T17:08:41.641174" elapsed="0.031982"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-25T17:08:41.674155" level="INFO">Typing text '80211be' into text field 'name=q'.</msg>
+<arg>name=q</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-25T17:08:41.673156" elapsed="0.100942"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-10-25T17:08:41.775098" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg time="2024-10-25T17:08:42.063500" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-10-25T17:08:42.063500" level="INFO">Releasing special key ENTER.</msg>
+<arg>name=q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-10-25T17:08:41.774098" elapsed="0.995797"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-25T17:08:47.771783" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-25T17:08:42.770899" elapsed="5.000884"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-25T17:08:47.772757" elapsed="2.197049"/>
+</kw>
+<doc>在Google搜尋80211be</doc>
+<status status="PASS" start="2024-10-25T17:08:39.460698" elapsed="10.511142"/>
+</test>
+<status status="PASS" start="2024-10-25T17:08:18.758957" elapsed="31.215881"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
